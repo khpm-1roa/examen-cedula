@@ -6,7 +6,7 @@ const port = 3000;
 
 app.get('/fibonacci',(req, res) => {
     fibonacci = [];
-    let numero = parseFloat(req.query.numero);
+    let numero = parseInt(req.query.numero);
      parImpar = (numero) => {
         if(numero % 2 === 0) {
           return "par";
